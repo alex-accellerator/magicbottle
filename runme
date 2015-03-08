@@ -4,4 +4,7 @@ meteor add gfk:notifications
 # add sound
 meteor add brentjanderson:buzz
 
+# add http get
+meteor add http
+
 meteor

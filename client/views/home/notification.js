@@ -2,8 +2,19 @@ if (Meteor.isClient) {
 
     Template.generate.events({
         'click .js-btn-client': function (event, template) {
-            Notifications.addNotification(template.find('.js-title').value, template.find('.js-msg').value, {type:parseInt(template.find('.js-level').value, 10), timeout: parseInt(template.find('.js-timeout').value, 10), userCloseable: template.find('.js-closeable').checked  });
-        }
+            Notifications.addNotification(template.find('.js-title').value, 
+                    template.find('.js-msg').value, 
+                    {type:parseInt(template.find('.js-level').value, 10), 
+                    timeout: parseInt(template.find('.js-timeout').value, 10), 
+                    userCloseable: template.find('.js-closeable').checked  }),
+        
+
+    Meteor.http.get('http://google.com', function (err, res) {
+      var message = res.data;
+      console.log(message);
+    });
+
+    }
     });
 
     Template.generate.helpers({
@@ -16,4 +27,5 @@ if (Meteor.isClient) {
         return returnValue;
     }
     });
+
 }
