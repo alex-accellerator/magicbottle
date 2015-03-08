@@ -2,13 +2,14 @@
 @import 'lib/elements';
 
 .feedback {
+  background: green;
   width: 93%;
-  max-width: 350px;
+  max-width: 274px;
   text-align: center;
-  margin: 4% auto;
+  margin: 0;
   padding: 30px 0;
-  border-radius: 5px;
-  border: thin solid #444;
+  x-border-radius: 5px;
+  x-border: thin solid #444;
   overflow: hidden;
 
   /* styles for feedback stars */
@@ -57,8 +58,12 @@
 
   /* styles for submit button */
   .submit-feedback {
+    background: yellow;
     clear: both;
+    color: #000;
+    font-weight: bold;
     margin: 0 auto;
+    padding: 10px;
     width: 270px;
   }
 
