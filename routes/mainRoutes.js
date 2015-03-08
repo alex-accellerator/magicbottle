@@ -15,6 +15,22 @@ Router.route('/splash', {
   }
 });
 
+Router.route('/login', {
+  name: 'login',
+  action: function () {
+    this.render('login');
+    SEO.set({ title: 'Login - ' + Meteor.App.NAME });
+  }
+});
+
+Router.route('/patient', {
+  name: 'patient',
+  action: function () {
+    this.render('patient');
+    SEO.set({ title: 'Patient Info - ' + Meteor.App.NAME });
+  }
+});
+
 Router.route('/validation', {
   name: 'validation',
   action: function () {
