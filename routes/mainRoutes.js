@@ -31,6 +31,14 @@ Router.route('/patient', {
   }
 });
 
+Router.route('/reminder', {
+  name: 'reminder',
+  action: function () {
+    this.render('reminder');
+    SEO.set({ title: 'Patient Reminder - ' + Meteor.App.NAME });
+  }
+});
+
 Router.route('/validation', {
   name: 'validation',
   action: function () {
