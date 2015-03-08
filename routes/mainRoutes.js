@@ -7,6 +7,14 @@ Router.route('/', {
   }
 });
 
+Router.route('/splash', {
+  name: 'splash',
+  action: function () {
+    this.render('splash');
+    SEO.set({ title: 'Splashpage - ' + Meteor.App.NAME });
+  }
+});
+
 Router.route('/validation', {
   name: 'validation',
   action: function () {
