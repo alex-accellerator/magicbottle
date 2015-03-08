@@ -1,12 +1,13 @@
 /* CSS declarations go here */
-/*
 @import url(http://fonts.googleapis.com/css?family=Josefin+Slab);
 
+/*
 body {
 	color: black;
 	font-family: arial;
 	margin: 0;
 }
+*/
 
 #header {
 	background-color: #D7D6C4;
@@ -48,13 +49,13 @@ body {
 	color: black;
 }
 
-input {
+#content input {
 	border: 1px solid #767450;
 	border-radius: 4px;
 	padding: 7px;
 }
 
-label {
+#content label {
     display: block;
     float: left;
     font-size: 12px;
@@ -65,7 +66,7 @@ label {
     width: 250px;
 }
 
-.button {
+#content .button {
 	border-radius: 3px;
 	background-color: #FF6600;
 	color: white;
@@ -77,11 +78,10 @@ label {
 	margin-left: 270px;
 }
 
-.row {
+#content .row {
 	padding: 10px 0;
 }
 
-.row:last-child {
+#content .row:last-child {
 	margin-top: 20px;
 }
-*/
