@@ -1,2 +1,7 @@
+# add growl notification
 meteor add gfk:notifications
+
+# add sound
+meteor add brentjanderson:buzz
+
 meteor
