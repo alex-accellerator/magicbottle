@@ -1,0 +1,26 @@
+<head>
+  <title>meteor-api-test</title>
+</head>
+
+<body>
+  <h1>meteor methods and remote API calls!</h1>
+
+  {{> hello}}
+</body>
+
+<template name="hello">
+  <p>
+  <p>
+    Or see article about using Meteor methods and remote API calls
+    <a href="http://meteor.hromnik.com/blog/meteor-methods-and-remote-api-calls">
+      http://meteor.hromnik.com/blog/meteor-methods-and-remote-api-calls
+    </a>
+  </p>
+
+  <h2>API results</h2>
+  {{#each strangeUsers}}
+    {{this}}
+  {{/each}}
+
+
+</template>
